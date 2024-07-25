@@ -327,6 +327,14 @@ Type: `boolean`
 
 Show help
 
+##### noDependencies
+
+Type: `boolean`
+
+Default: `false`
+
+Skips running dependant tasks first
+
 ##### nxBail
 
 Type: `boolean`

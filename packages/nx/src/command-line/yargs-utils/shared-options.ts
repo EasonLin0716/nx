@@ -27,6 +27,7 @@ export interface RunOptions {
   dte: boolean;
   batch: boolean;
   useAgents: boolean;
+  noDependencies: boolean;
 }
 
 export function withRunOptions<T>(yargs: Argv<T>): Argv<T & RunOptions> {
@@ -78,6 +79,12 @@ export function withRunOptions<T>(yargs: Argv<T>): Argv<T & RunOptions> {
         'Rerun the tasks even when the results are available in the cache',
       type: 'boolean',
       default: false,
+    })
+    .options('noDependencies', {
+      describe: 'Skips running dependant tasks first',
+      type: 'boolean',
+      default: false,
+      alias: 'no-deps',
     })
     .options('cloud', {
       type: 'boolean',

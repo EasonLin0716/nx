@@ -36,6 +36,7 @@ export interface NxArgs {
   nxIgnoreCycles?: boolean;
   type?: string;
   batch?: boolean;
+  noDependencies?: boolean;
 }
 
 export function createOverrides(__overrides_unparsed__: string[] = []) {

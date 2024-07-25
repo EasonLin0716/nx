@@ -93,6 +93,14 @@ Type: `string`
 
 Show the task graph of the command. Pass a file path to save the graph data instead of viewing it in the browser. Pass "stdout" to print the results to the terminal.
 
+### noDependencies
+
+Type: `boolean`
+
+Default: `false`
+
+Skips running dependant tasks first
+
 ### nxBail
 
 Type: `boolean`
